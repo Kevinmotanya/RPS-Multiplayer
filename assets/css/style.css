@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs');
+html{
+	height: 100%;
+	background: #f4f4f4 url(../images/bg.jpg) repeat top left;
+}
+body{
+	background-color: transparent;
+	padding-top: 20px;
+	min-width: 768px;
+	font-family: 'Mouse Memoirs', sans-serif;
+	letter-spacing: 2px;
+}
+hr{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#startfrm{
+	width: 300px;
+}
+.ver-spacer {
+	margin-bottom: 20px;
+}
+#chatdiv{
+	width: 70%;
+	padding-bottom: 50px;
+}
+.scores{
+	width: 70%;
+	padding: 10px 0;
+}
+.players img{
+	margin: 0 auto;
+}
+.playerimg{
+	position: relative;
+}
+.playername{
+	position: absolute; 
+	bottom: 40px; 
+	left: 0;
+	text-align: center;
+	width: 100%; 
+}
+.scores img, .scores span{
+	width: 20%;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.players{
+	display: inline-block;
+	border-radius: 5px;
+	position: relative;
+	background-color: #ccc;
+}
+.player-no{
+	position: absolute;
+	top: -4px;
+	font-size: 3em;
+	margin: 0;
+}
+.playerno1{
+	left: 0;
+}
+.playerno2{
+	right: 0; 
+}
+.player1{
+	color: hsl(308, 100%, 30%);
+}
+.player2{
+	color: #99004d;
+}
+.waiting{
+	text-align: center;
+	font-size: 20px;
+	line-height: 250px;
+}
+.rps {
+	cursor: pointer;
+}
+.selected {
+	background-color: rgba(153, 153, 153, 0.699);
+	border-radius: 5px;	
+}
+.avoid-clicks {
+	cursor: none;
+  pointer-events: none;
+}
+.loseicon{
+	-webkit-transform:rotate(180deg) scaleX(-0.8);
+	        transform:rotate(180deg) scaleX(-0.8);
+}
+.status{
+	color: #01eeff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	border-radius: 5px
+}
+.status .row{
+	margin: 10px 0;
+}
+
+.statustxt{
+	font-size: 1.4em;
+	text-align: center;
+}
+
+#winnerdiv{
+	font-size: 3em;
+	letter-spacing: 4px;
+}
+#play{
+	width: 100px !important;
+}
+input[type="text"]{
+	width: calc(100% - 70px) !important;
+}
+button{
+	width: 60px !important;
+}
+input[type="text"], button{
+	letter-spacing: 2px;
+}
+
+.footer {
+	background-color: #201e1e81;
+	color: rgb(204, 204, 204);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	line-height: 40px;
+	border-top: 2px solid #1f0003;
+	text-align: center;	
+	font-size: 15px
+}
+
