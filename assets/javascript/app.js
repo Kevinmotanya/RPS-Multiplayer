@@ -46,6 +46,7 @@ chatRef.on('child_added', function(snapshot) {
 	console.log("The read failed with code: " + errorObject.code);
 });
 
+//////////////////////////////////////
 
 rpsRef.on('value',function(snapshot){
 
@@ -358,3 +359,4 @@ var rps = {
 		rpsRef.update(updates);
 	}
 };
+Terms
