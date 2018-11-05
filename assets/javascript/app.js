@@ -1,7 +1,13 @@
-var config = {
-
-
-firebase.initializeApp(config);
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZhtD2x1vTgBGScNmrvvi4Qu4uH52iPpg",
+    authDomain: "motankproject.firebaseapp.com",
+    databaseURL: "https://motankproject.firebaseio.com",
+    projectId: "motankproject",
+    storageBucket: "motankproject.appspot.com",
+    messagingSenderId: "562925106661"
+  };
+  firebase.initializeApp(config);
 
 var database = firebase.database(),
 		rpsRef = firebase.database().ref('/rpsgames'),
