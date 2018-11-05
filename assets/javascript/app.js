@@ -1,11 +1,5 @@
 var config = {
-	apiKey: "AIzaSyDU7Cddk_suODSN77BSaFAj5uSF7WDZc_A",
-	authDomain: "multirps-9190a.firebaseapp.com",
-	databaseURL: "https://multirps-9190a.firebaseio.com",
-	projectId: "multirps-9190a",
-	storageBucket: "multirps-9190a.appspot.com",
-	messagingSenderId: "771308533274"
-};
+
 
 firebase.initializeApp(config);
 
