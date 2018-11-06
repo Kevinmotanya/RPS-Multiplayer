@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Max's RPS Multiplayer Game</title>
+    <title>RPS Multiplayer Game</title>
 
     <link rel="icon" href="assets/images/favicon.ico?v=1.1">
 
@@ -22,14 +22,25 @@
 
           crossorigin="anonymous"></script>
 
-      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+	  <style>
+		h1 {
+			text-align: center;}
+			p.lead {
+			text-align: center;
+		}</style>
 
 </head>
 
 <body>
-
-    <h1>RPS Multiplayer</h1>
-
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+		  <h1 class="display-4">RPS Multiplayer</h1>
+		 <p style=" color: blueviolet;
+		 font-family: verdana;
+		 font-size: 200%;"class="lead">This game allows just two people to play at any given time.</p>
+		</div>
+	  </div>
 
 
 
@@ -70,7 +81,7 @@
 
 
 
-<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/game.js"></script>
 
 </body>
 
