@@ -1,5 +1,4 @@
-	// Initialize Firebase
-	
+
 
   // Initialize Firebase
   var config = {
@@ -86,7 +85,7 @@
   
 			  $("#p1stats").empty();
   
-			  // Displays that player disconnected
+			  // When a player exits the game it displays that player's disconnected
   
 			  if (p1 !== null) {
   
@@ -94,7 +93,7 @@
   
 					  player: p1,
   
-					  taunt: " has disconnected",
+					  slam: " has disconnected",
   
 					  dateAdded: firebase.database.ServerValue.TIMESTAMP
   
@@ -194,7 +193,7 @@
   
 		  if (!p1snapshot.exists()) {
   
-			  // sets local variable of player number, to know which page to display choices on and who is taunting
+			  // sets local variable of player number, to know which page to display choices on and who is slamming
   
 			  playerNum = 1;
   
@@ -228,7 +227,7 @@
   
 		  } else if (!p2snapshot.exists()) {
   
-			  // sets local variable of player number, to know which page to display choices on and who is taunting
+			  // sets local variable of player number, to know which page to display choices on and who is slamming
   
 			  playerNum = 2;
   
@@ -628,7 +627,7 @@
   
 	  // Operation of the chat box below the player cards
   
-	  $("#taunt").on("click", function() {
+	  $("#slam").on("click", function() {
   
 		  event.preventDefault();
   
@@ -671,7 +670,7 @@
   
 	  playerChat.orderByChild("dateAdded").on("child_added", function(snapshot) {
   
-		  $("#chatbox").append(snapshot.val().player + snapshot.val().taunt + "<br>");
+		  $("#chatbox").append(snapshot.val().player + snapshot.val().slam + "<br>");
   
 		  var bottom = $("#chatbox").get(0);
   
