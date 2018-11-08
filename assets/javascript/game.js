@@ -10,16 +10,12 @@
     storageBucket: "",
     messagingSenderId: "313563623341"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config);	
 
-	
-  
-	  
   
   
 	  var database = firebase.database();
-  
-	  
+  	  
   
   
 	  // each player enters in as their own folder in the database
@@ -66,15 +62,7 @@
 	  // initial submit form to enter as a player
   
 	  $("#playerInfo").html("<input id=playerName type=text placeholder='Enter your name to begin'><input id=enterPlayer type=submit value=Start>");
-  
-	  
-  
-  
-	  
-  
-  
-	  
-  
+
   
 	  // publishes changes made to the player 1 database
   
