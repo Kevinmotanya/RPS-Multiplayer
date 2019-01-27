@@ -3,91 +3,69 @@
 <html lang="en-us">
 
 <head>
-<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
-    <style>
-      body {
-        font-family: 'Tangerine', serif;
-        font-size: 48px;
-      }
-    </style>
+
     <meta charset="UTF-8">
 
-    <title>RPS Multiplayer Game</title>
+    <title>Max's RPS Multiplayer Game</title>
 
     <link rel="icon" href="assets/images/favicon.ico?v=1.1">
-<!--reset.css link-->
+
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<!--css link-->
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<!--jquery link-->
-    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"
 
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
-          crossorigin="anonymous"></script>
-<!--firebase link-->
-	  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-	  <style>
-		h1 {
-			text-align: center;}
-			p.lead {
-			text-align: center;
-		}</style>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
 
 </head>
 
 <body>
-	<!--Jumbotron for name of the game and description-->
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-		  <h1 class="display-4">RPS Multiplayer</h1>
-		 <p style=" color: blueviolet;
-		 font-family: verdana;
-		 font-size: 200%;"class="lead">This game allows just two people to play at any given time.</p>
-		</div>
-	  </div>
+
+    <h1>RPS Multiplayer</h1>
+
 
 
 
     <div id="container">
-<!--diplays name of the player-->
+
         <div id="playerInfo"></div>
-<!--diplays whose turn it is to play-->
+
         <div id="playerTurn"></div>
 
         <div id="player1">
-<!--alerts when it is player 1's turn to play-->
+
             <div id="p1name">Waiting for Player 1</div>
-<!--shows player 1 the rock paper and scissors choices to select in order to play the game-->
+
             <div id="p1choices"></div>
 
             <div id="p1stats"></div>
 
         </div>
-<!--diplaysthe results of the game-->
+
         <div id="results"></div>
 
         <div id="player2">
-<!--alerts when it is player 1's turn to play-->
+
             <div id="p2name">Waiting for Player 2</div>
 
             <div id="p2choices"></div>
-<!--shows player 2 the rock paper and scissors choices to select in order to play the game-->
+
             <div id="p2stats"></div>
 
         </div>
-<!--this div shows messages about the current players. It shows which player joined and which player left the game-->
-       
+
+        <div id="chatbox"></div>
+
+        <form id="messageBar"><input id="messageBox" type="text"><input id="taunt" type="submit" value="Taunt"></form>
+
+    </div>
 
 
 
-    <footer class="footer"><center>Copyright 2018</center></footer>
 
-<!--link to the js file-->
-
-
-<script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </body>
 

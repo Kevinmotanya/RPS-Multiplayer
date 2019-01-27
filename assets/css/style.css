@@ -1,11 +1,10 @@
 body {
 
-	background-image: url("../images/RPS.png");
+	background-image: url("../images/rps.JPG");
 
-	
+	background-repeat: no-repeat;
 
-	background-size: auto;
-	background-position: center;
+	background-size: cover;
 
 }
 
@@ -17,16 +16,21 @@ h1 {
 
 }
 
+h2 {
+
+	font-size: 30px;
+
+}
 
 #playerInfo, #playerTurn {
 
 	margin: auto;
 
-	width: 25%;
+	width: 20%;
 
-	margin-top: 16px;
+	margin-top: 15px;
 
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 
 	text-align: center;
 
@@ -96,13 +100,9 @@ h1 {
 
 #playerName {
 
-	width: 200px;
+	width: 150px;
 
 	margin-right: 5px;
-	font-weight: italic;
-	font-size: 14px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-	color: black;
 
 }
 
@@ -110,10 +110,9 @@ h1 {
 
 	position: absolute;
 
-	bottom: 2px;
+	bottom: 0px;
 
 	left: 90px;
-	font-weight: bold;
 
 }
 
